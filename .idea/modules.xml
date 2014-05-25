@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FinDecS.iml" filepath="$PROJECT_DIR$/FinDecS.iml" />
+      <module fileurl="file://$USER_HOME$/Entwicklung/pushover4j/pushover-client.iml" filepath="$USER_HOME$/Entwicklung/pushover4j/pushover-client.iml" />
     </modules>
   </component>
 </project>
