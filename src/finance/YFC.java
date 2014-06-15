@@ -3,7 +3,7 @@ package finance;
 /**
  * Created by neo on 01.06.14.
  */
-public class YFPC {
+public class YFC {
 
 
     public final static String DATE = "Date";

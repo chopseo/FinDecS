@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.PROPERTY)
-@XmlType(propOrder={YFPC.DATE,YFPC.OPEN,YFPC.HIGH,YFPC.LOW,YFPC.CLOSE,YFPC.VOLUME,YFPC.ADJ_CLOSE})//"High","Low","Close","Volume","Adj_Close"})
+@XmlType(propOrder={YFC.DATE, YFC.OPEN, YFC.HIGH, YFC.LOW, YFC.CLOSE, YFC.VOLUME, YFC.ADJ_CLOSE})//"High","Low","Close","Volume","Adj_Close"})
 public class YahooHistQuote {
 
 //    <Date>2010-02-19</Date>

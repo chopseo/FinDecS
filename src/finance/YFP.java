@@ -3,6 +3,7 @@ package finance;
 /**
  * Created by neo on 01.06.14.
  */
+
 //YahooFinanceProperties
 public enum YFP {
 
