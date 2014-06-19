@@ -2,17 +2,15 @@ package finance;
 
 import org.joda.time.DateTime;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 /**
  * Created by neo on 01.06.14.
  */
 
-@XmlRootElement
+@XmlRootElement(name="quote")
 @XmlAccessorType(XmlAccessType.PROPERTY)
+//namen von instanz variablen, NICHT der xml-properties...
 @XmlType(propOrder={YFC.DATE, YFC.OPEN, YFC.HIGH, YFC.LOW, YFC.CLOSE, YFC.VOLUME, YFC.ADJ_CLOSE})//"High","Low","Close","Volume","Adj_Close"})
 public class YahooHistQuote {
 
@@ -23,6 +21,16 @@ public class YahooHistQuote {
 //    <Close>15.58</Close>
 //    <Volume>15407900</Volume>
 //    <Adj_Close>15.58</Adj_Close>
+
+
+    private String symbol;
+    @XmlAttribute
+    public String getSymbol() {
+        return symbol;
+    }
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
 
     private DateTime date;
     private Double open;

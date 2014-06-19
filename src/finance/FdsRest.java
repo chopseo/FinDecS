@@ -10,6 +10,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by neo on 15.06.14.
@@ -19,7 +20,7 @@ public class FdsRest {
 
 
 
-    public static String getRestXml() {
+    public static InputStream getRestXml() {
 
 
         String request = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20" +
@@ -32,16 +33,19 @@ public class FdsRest {
 
 
         try {
+
             HttpResponse response = client.execute(method);
 
-            HttpEntity entity = response.getEntity();
+//            HttpEntity entity = ;
 
-            System.out.println(EntityUtils.toString(entity));
+//            System.out.println(EntityUtils.toString(entity));
 
-            return response.getEntity().toString();
+            return response.getEntity().getContent();
 
         } catch (IOException e) {
+
             e.printStackTrace();
+
         }
 
         return null;
